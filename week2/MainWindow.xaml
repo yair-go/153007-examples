@@ -1,0 +1,16 @@
+﻿<Window x:Class="week2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:week2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tb_Console" HorizontalAlignment="Left" Height="112" Margin="87,215,0,0" TextWrapping="Wrap" Text="Hello CS WPF" VerticalAlignment="Top" Width="582" TextChanged="tb_Console_TextChanged"/>
+        <Button x:Name="pb_Console" Content="Button" HorizontalAlignment="Left" Margin="69,119,0,0" VerticalAlignment="Top" Width="73" Height="29" Click="pb_Console_Click"/>
+        <Button x:Name="pb_GetNumber" Content="Random Number" HorizontalAlignment="Left" Margin="360,94,0,0" VerticalAlignment="Top" Width="183" Click="pb_GetNumber_Click"/>
+        <TextBox x:Name="tb_Cin" HorizontalAlignment="Left" Height="23" Margin="360,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
