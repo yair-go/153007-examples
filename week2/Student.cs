@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace week2
 {
-    public class Student
+    /// <summary>
+    /// 
+    /// </summary>
+    public class Student : Person, IComparable
     {
         #region Fields
         private string _name;
         private int _age;
         private int _id;
+
+        private static int _counterId;
 
         #endregion
 
@@ -20,7 +25,7 @@ namespace week2
         {
             Name = name;
             Age = age;
-            _id = id;
+            _id = _counterId++;
         }
 
         #endregion
@@ -38,10 +43,24 @@ namespace week2
         #endregion
 
         #region Methods
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            return _name + " " + Age ;
+            return _name + " " + Age + " ID : " + _id;
+        }
+
+        public override string getName()
+        {
+            return Name;
+        }
+
+        public int CompareTo(object obj)
+        {
+
+            return _id.CompareTo((obj as Student)._id);
         }
         #endregion
     }

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="week2.App" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="1.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="week2.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Position X="3.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
@@ -16,22 +16,37 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="week2.Student">
-    <Position X="7" Y="1.75" Width="1.5" />
+    <Position X="8" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAEAEBAAAQAAAAAAAgAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAQEAEBAAAQAAAAAAAkAAAAEAAEAAAA=</HashCode>
       <FileName>Student.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="week2.Properties.Resources" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="week2.Properties.Settings" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="1.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="week2.Person" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="week2.Worker">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
