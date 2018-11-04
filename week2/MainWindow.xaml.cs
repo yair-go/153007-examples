@@ -48,11 +48,13 @@ namespace week2
          /// <param name="e"></param>
         private void pb_GetNumber_Click(object sender, RoutedEventArgs e)
         {
-            
-            int cin = Convert.ToInt32(tb_GuessNumber.Text);
-            int inputNum = int.Parse(tb_GuessNumber.Text);
+            int inputNum;
+            bool success = int.TryParse(tb_GuessNumber.Text, out inputNum);
+            //int cin = Convert.ToInt32(tb_GuessNumber.Text);
+            //int inputNum = int.Parse(tb_GuessNumber.Text);
+
             int min = 0, max = 1000;
-            int[] arr = new int[100];
+            int[] arr = new int[1000];
             Random r = new Random();
             for (int i = 0; i<arr.Length; i++)
             {
@@ -65,7 +67,13 @@ namespace week2
                 nums.Append(", ");
             }
             tb_Console.Text = nums.ToString();
-            tb_GuessNumber.Text = 100.ToString();
+            //tb_Console.Text = "";
+            //foreach (int item in arr)
+            //{
+            //    tb_Console.Text += item;
+            //    tb_Console.Text += ", ";
+            //}
+            //tb_GuessNumber.Text = 100.ToString();
         }
     }
 }
