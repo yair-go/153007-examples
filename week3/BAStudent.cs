@@ -12,10 +12,14 @@ namespace week3
 
         public BAStudent(bool milga) : base("Moshe",18)
         {
-            this.Milga = milga;
+            this.milga = milga;
         }
 
-        public bool Milga { get => milga; set => milga = value; }
+        public BAStudent(string name, bool milga) : base(name, 18)
+        {
+            this.milga = milga;
+        }
+        public bool Milga { get => milga; }
 
         public override string ToString()
         {

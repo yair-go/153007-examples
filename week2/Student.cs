@@ -51,6 +51,13 @@ namespace week2
         {
             return _name + " " + Age + " ID : " + _id;
         }
+        public  string ToString(int id)
+        {
+            return _name + " " + Age + " ID : " + id;
+        }
+        
+
+       
 
         public override string getName()
         {
@@ -59,9 +66,10 @@ namespace week2
 
         public int CompareTo(object obj)
         {
-
-            return _id.CompareTo((obj as Student)._id);
+            return Name.CompareTo((obj as Student).Name);
         }
+
+
         #endregion
     }
 }

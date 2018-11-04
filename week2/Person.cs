@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace week2
 {
-    public abstract class Person
+     public abstract class Person
     {
         public abstract string getName();
     }

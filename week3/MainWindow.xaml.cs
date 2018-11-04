@@ -31,22 +31,43 @@ namespace week3
             BAStudent bA = new BAStudent(true);
             MAStudent mA = new MAStudent(false);
 
+            bool b = rbOne.IsChecked.Value;
+
             List<Student> students = new List<Student>();
 
             students.Add(bA);
             students.Add(mA);
-            students.Add(new BAStudent(false));
-            
+            students.Add(new BAStudent("Avraham", false));
+
+            Student st = students[2];
             students.Sort();
+            Student max =  students.Max();
+
+            
             tb_StudentDetails.Text = "";
             foreach (Student s in students)
             {
                 if (s is BAStudent)
                 {
+                    bool m = (s as BAStudent).Milga;
                     tb_StudentDetails.Text += s.ToString() + "\n"; 
                 }
 
             }
+            int a = Convert.ToInt32(DateTime.Now);
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int[] arr = TestStringSplit.ToIntArray(tbNumbers.Text);
+            string str = tbNumbers.Text;
+            
         }
     }
 }

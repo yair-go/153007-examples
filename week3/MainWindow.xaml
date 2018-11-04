@@ -9,6 +9,10 @@
     <Grid>
         <Button x:Name="pbStartWeek3" Content="Start Week 3" HorizontalAlignment="Left" Margin="90,115,0,0" VerticalAlignment="Top" Width="166" Click="pbStartWeek3_Click"/>
         <TextBox x:Name="tb_StudentDetails" HorizontalAlignment="Left" Height="139" Margin="99,159,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbNumbers" HorizontalAlignment="Left" Height="23" Margin="43,39,0,0" TextWrapping="Wrap" Text="Enter Numbers" VerticalAlignment="Top" Width="407" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="357,115,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <RadioButton x:Name="rbOne" Content="RadioButton" HorizontalAlignment="Left" Margin="335,189,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbTwo" Content="RadioButton" HorizontalAlignment="Left" Margin="335,219,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
