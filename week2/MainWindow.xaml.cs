@@ -50,11 +50,23 @@ namespace week2
         {
             int inputNum;
             bool success = int.TryParse(tb_GuessNumber.Text, out inputNum);
-            //int cin = Convert.ToInt32(tb_GuessNumber.Text);
+            try
+            {
+                int cin = Convert.ToInt32(tb_GuessNumber.Text);
+                success = true;
+            }
+            catch
+            {
+                success = false;
+            }
+            finally
+            {
+
+            }
             //int inputNum = int.Parse(tb_GuessNumber.Text);
 
             int min = 0, max = 1000;
-            int[] arr = new int[1000];
+            int[] arr = new int[10000];
             Random r = new Random();
             for (int i = 0; i<arr.Length; i++)
             {
@@ -66,7 +78,9 @@ namespace week2
                 nums.Append(item);
                 nums.Append(", ");
             }
-            tb_Console.Text = nums.ToString();
+            tb_Console.Text = "";
+            tb_Console.Text += nums;
+
             //tb_Console.Text = "";
             //foreach (int item in arr)
             //{

@@ -18,6 +18,12 @@ namespace week2
 
         private static int _counterId;
 
+        public static Student Parse(string str)
+        {
+            string[] data =  str.Split(',');
+            return  new Student(data[0], int.Parse(data[1]));
+        }
+
         #endregion
 
         #region Ctors
