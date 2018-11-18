@@ -29,11 +29,13 @@ namespace week5
         private void startbutton_Click(object sender, RoutedEventArgs e)
         {
             var lecturer = new { ID = 29, Name = "Dani" };
-            var lecturer2 = new { ID = 30, Name = "Oshri" };
+            var lecturer2 = new { ID2 = 30, Name = "Oshri" };
             var lecturer3 = new { ID = 31, Name = "Yair", Age = 30 };
-            tbShow.Text = lecturer2.ToString() + " " + lecturer2.GetType();
+            tbShow.Text = lecturer.ToString() + " " + lecturer.GetType() + "\n";
+            tbShow.Text += lecturer2.ToString() + " " + lecturer2.GetType();
 
             string str = "123";
+            
             string StudentName = "Aviad";
 
            
@@ -57,11 +59,16 @@ namespace week5
         private void pbExtension_Click(object sender, RoutedEventArgs e)
         {
             string str = "123";
+            str.ToInt();
+          //  int[] arr = tbShow.Text.ToIntArray();
+
             string StudentName = "Aviad";
             int age = 23;
-            //int[] arr = tbShow.Text.ToIntArray();
+            
+
             Student s1 = new Student(StudentName);
-             Student s = (StudentName + "," + age ).ToStudent();
+            string newStudent = StudentName + "," + age;
+            Student s = newStudent.ToStudent();
              string a = "123a";
 
             try
@@ -74,17 +81,18 @@ namespace week5
                 {
                     tbShow.Text = ex.Message;
                     //throw new Exception("Hello Exception");
-                    throw new MyExpception("new message", ex);
+                    throw new MyExpception2("new message", ex);
                 }
                 finally
                 {
-                    //  tbShow.Text = "I always happen";
+                      tbShow.Text = "\nI always happen";
                 }
             }
             catch (Exception ex)
             {
 
-                tbShow.Text = ex.Message;
+                tbShow.Text += ex.Message;
+                //throw ex;
             }
 
         }
